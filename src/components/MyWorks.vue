@@ -10,11 +10,11 @@
           <img src="../assets/img/videotek.jpg" alt="worklogo" class="work-img">
           <div> <h3>Videotek</h3> <p>Командная разработка</p> </div>
         </router-link>
-        <router-link :to="{name: 'WorkDoct24'}" class="cart-work">
+        <router-link :to="{name: 'WorkShop'}" class="cart-work">
           <img src="../assets/img/verstca.jpg" alt="worklogo" class="work-img">
           <div> <h3>Онлайн магазин</h3> <p>Учебный проект</p> </div>
         </router-link>
-        <router-link :to="{name: 'WorkDoct24'}" class="cart-work">
+        <router-link :to="{name: 'WorkFirst'}" class="cart-work">
           <img src="../assets/img/first.jpg" alt="worklogo" class="work-img">
           <div> <h3>Первый сайт</h3> <p>Учебный проект</p> </div>
         </router-link>

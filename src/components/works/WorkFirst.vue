@@ -1,7 +1,7 @@
 <template>
 <div class="container">
-  <h1 class="header-page">Doct24</h1> 
-  <img src="../../assets/img/Doc24.png" alt="" class="img-stile">
+  <h1 class="header-page">Первый сайт</h1> 
+  <img src="../../assets/img/first.jpg" alt="" class="img-stile">
   <p class="text">Большой проект разрабатываемый командой энтузиастов. <br>
 Я выступаю в роли лидера команды Frontend-разработчиков на фреймворк Vue. <br>
 Веб-сервис разрабатывается как платформа для связи пациентов с необходимыми им докторами.
@@ -14,7 +14,7 @@ Backend разработан на Django.
 
 <script>
 export default {
-    name: 'WorkDoct24',
+    name: 'WorkFirst',
 }
 </script>
 

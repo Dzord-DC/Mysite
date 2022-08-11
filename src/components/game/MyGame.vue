@@ -1,13 +1,22 @@
 <template>
-  <p>Игра</p>
+  <div class="game-box">
+    <PlayingField />
+  </div>
+  
 </template>
 
 <script>
+import PlayingField from './PlayingField.vue'
 export default {
-    name: 'MyGame'
+    name: 'MyGame',
+    components: {
+    PlayingField
+  }
 }
 </script>
 
 <style>
-
+.game-box{
+  margin-top: 10px ;
+}
 </style>
