@@ -18,7 +18,7 @@
             <game-star v-for="(item) in getStar" :key="item.id" :id="item.id"/>
             <GameStar /> -->
         </div>
-        
+        <div class="game-text">Счет: {{points}}</div>
     </div> 
     
 </div>
@@ -51,6 +51,9 @@ export default {
       slag:0
   }),
   computed: {
+    points(){
+      return this.$store.getters.getPoints
+    },
       getBul () {
         return this.$store.getters.getBullets
       },
@@ -70,6 +73,7 @@ export default {
           'getBullets',
           'getEnemys',
           'getStars',
+          'getPoints'
       ]),
       ...mapActions([
           'shotstate',
@@ -111,7 +115,7 @@ export default {
       },
   },
   mounted() {
-      this.runIt()
+      //this.runIt()
       this.enemys = this.getEnemy
   },
   created () {
@@ -162,7 +166,12 @@ export default {
     color: transparent;
     text-shadow: 0 0 0 black;
     opacity: 0;
-    z-index: 0;
+    z-index: 1;
+}
+.game-text{
+    position: absolute;
+    margin: 20px;
+    font-size: 24px;
 }
 
 </style>

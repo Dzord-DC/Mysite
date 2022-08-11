@@ -19,7 +19,7 @@ export default new Vuex.Store({
             state.bullets.push(payload)}
         },
         moveSlag(state) {
-            state.bullets.forEach(item=>item.y-=5)
+            state.bullets.forEach(item=>item.y-=10)
         },
         moveEnemy(state) {
             state.enemys.forEach(item=>{
