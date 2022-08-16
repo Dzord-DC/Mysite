@@ -1,5 +1,5 @@
 <template>
-<div class="box" :style="{height:screenHeight-200 + 'px'}">
+<div class="box" :style="{height:screenHeight-250 + 'px'}">
     <input class="control" autofocus 
         v-on:keydown.left="movingLeft"
         v-on:keyup.left="stop" 
@@ -133,7 +133,7 @@ export default {
 <style scoped>
 .box{
     width: 100%;
-    height: 850px;
+    height: 808px;
     position: relative;
     display: flex;
     

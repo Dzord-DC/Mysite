@@ -69,8 +69,8 @@ export default {
   flex-direction: column;
   position: fixed;
   justify-content: center;
-  z-index: 20;
-  height: 80%;
+  z-index: 10;
+  height: 830px;
   align-items: center;
   background-color: rgba(107, 107, 107, 0.329);
 }

@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .header-box{
-  height: 105px;
+  height: 75px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -37,19 +37,19 @@ export default {
 .container{
 
   width: 1034px;
-  margin: auto;
+  margin: 0 auto;
 }
 .menu{
   display: flex;
 }
 .logo{
   margin: 0 25px;
-  height:100px
+  height:60px
 }
 .header-button{
   display: flex;
   font-size: 20px;
-  height: 60px;
+  height: 30px;
   align-items: center;
   justify-content: center;
   text-decoration: none;

@@ -9,13 +9,35 @@
       <a href="https://wa.me/79157665312" class="contact-a"><img src="../assets/img/whatsapp.png" alt="vk" class="contact-img"> <p class="contact-text">Whatsapp</p> </a>
     </div>
     
-
     </div>
 </template>
 
 <script>
+
 export default {
-    name: 'MyContacts'
+    name: 'MyContacts',
+    data(){
+      return{
+        ms: 1.9891*Math.pow(10, 30),
+        me: 5.9722*Math.pow(10, 24),
+        mm: 7.35*Math.pow(10, 22),
+        Rem: 384467000,
+        Rsm: 149600000000,
+        G: 6.7*Math.pow(10, -11)
+      }
+      
+    },
+    computed:{
+      Fse(){
+        return this.G*((this.ms*this.me)/Math.pow(this.Rsm, 2))
+      },
+      Fsm(){
+        return this.G*((this.ms*this.mm)/Math.pow(this.Rsm-this.Rem, 2))
+      },
+      Fem(){
+        return this.G*((this.mm*this.me)/Math.pow(this.Rem, 2))
+      },
+    }
 }
 </script>
 

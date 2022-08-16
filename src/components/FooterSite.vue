@@ -24,7 +24,7 @@ export default {
 .footer{
   position: fixed;
   bottom: 0;
-  height: 105px;
+  height: 75px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -32,7 +32,7 @@ export default {
   background-color: #fff;
 }
 .void {
-height: 105px;
+height: 75px;
 }
 .contact-box{
   display: flex;
