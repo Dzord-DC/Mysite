@@ -4,7 +4,7 @@
   <img src="../../assets/img/videotek.jpg" alt="" class="img-stile">
   <p class="text">
     Данный сайт является выпускным проектом курса Geekbrains. 
-    Над ним трудилась команда из 6 программистов. Я работал в роли Frontend-разработчика. 
+    Над ним трудилась команда из 6 разработчиков. Я работал в роли Frontend-разработчика. 
     Front проекта написан на Vue, backend на node.js. 
     Сайт Videotek-это онлайн-кинотеатр, 
     в котором реализована возможность просмотра фильмов, сериалов, 
@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .container{
-  width: 1034px;
+  max-width: 1034px;
   margin: auto;
   display: flex;
     flex-direction: column;

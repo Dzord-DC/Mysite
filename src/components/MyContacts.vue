@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 .container{
-  width: 1034px;
+  max-width: 1034px;
   margin: auto;
 }
 .header-page{

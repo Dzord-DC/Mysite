@@ -10,7 +10,20 @@
         <router-link :to="{name:'Game'}" class="header-button"> <p class="btn-text">Игра</p> </router-link>
         <router-link :to="{name:'Contacts'}" class="header-button"> <p class="btn-text">Контакты</p> </router-link>
       </div>
-      
+      <div class="menu-burger">
+        <div @click="showMenu = !showMenu" class="munu-buttom"><img src="../assets/img/method-draw-image.svg"  alt="logo" class="logo"> Меню
+        </div>
+        <div v-if="showMenu" class="menu-burger-container" @click="showMenu = !showMenu" :style="{height:screenHeight + 'px', width:screenWidth + 'px' }">
+          <div class="menu-burger-box">
+            <router-link to="/" class="header-button"> <p class="btn-text">Разработчик</p> </router-link>
+            <router-link :to="{name:'Works'}" class="header-button"> <p class="btn-text">Мои работы</p> </router-link>
+            <!--<router-link :to="{name:'Game'}" class="header-button"> <p class="btn-text">Игра</p> </router-link>-->
+            <router-link :to="{name:'Contacts'}" class="header-button"> <p class="btn-text">Контакты</p> </router-link>
+        
+          </div>
+         </div>
+        
+      </div>
     </div>
     
   </div>
@@ -20,6 +33,17 @@
 <script>
 export default {
     name: 'HederSite',
+    data(){
+      return{
+        showMenu: false,
+        screenHeight: 100,
+        screenWidth: 100,
+      }
+    },
+    mounted () {
+      this.screenHeight = window.screen.height;
+      this.screenWidth = window.screen.width;
+    }
 }
 </script>
 
@@ -34,13 +58,26 @@ export default {
     position: fixed;
     z-index: 200;
 }
+.void {
+height: 75px;
+}
 .container{
-
-  width: 1034px;
+  max-width: 1034px;
   margin: 0 auto;
 }
 .menu{
   display: flex;
+}
+.munu-buttom{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu-burger{
+  display: none;
+}
+.menu-burger-box{
+  width: 40%;
 }
 .logo{
   margin: 0 25px;
@@ -72,7 +109,20 @@ a.router-link-active, li.router-link-active>a {
   color: #fff;
   background-color: #333;
 }
-@media screen {
-  
+@media screen and (max-width: 800px) {
+.header-box{
+  justify-content: start;
+}
+.container{
+
+  margin: 0 ;
+}
+.menu{
+  display: none;
+}
+.menu-burger{
+  display: flex;
+  flex-direction: column;
+}
 }
 </style>

@@ -19,10 +19,7 @@ export default {
 </script>
 
 <style>
-.container{
-  width: 1034px;
-  margin: auto;
-}
+
 .header-page{
   margin: 36px auto;
 }
