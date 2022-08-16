@@ -50,7 +50,7 @@
 </div>
 <div class="work-plase">
   <div class="work-time litle-margin">
-    Сентябрь 2016 — сентябрь 2018 br
+    Сентябрь 2016 — сентябрь 2018 
 2 года 1 месяц
   </div>
   <div class="work-description">

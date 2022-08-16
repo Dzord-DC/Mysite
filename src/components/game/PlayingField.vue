@@ -1,6 +1,6 @@
 <template>
-<div class="box" :style="{height:screenHeight-250 + 'px'}">
-    <input class="control" autofocus 
+<div class="box" :style="{height:screenHeight + 'px'}">
+    <input class="control" autofocus ref="cont"
         v-on:keydown.left="movingLeft"
         v-on:keyup.left="stop" 
         v-on:keydown.right="movingRight"
@@ -58,6 +58,7 @@ export default {
         return this.$store.getters.getBullets
       },
       getEnemy () {
+        this.$refs.cont.focus()
         return this.getEnemys()
       },
       getStar(){
@@ -116,10 +117,10 @@ export default {
   },
   mounted() {
       //this.runIt()
-      this.enemys = this.getEnemy
+      this.enemys = this.getEnemy;
   },
   created () {
-      this.screenHeight = window.screen.height -20
+      this.screenHeight = window.screen.height - 274;
   },
   unmounted () {
       this.stopIt()
