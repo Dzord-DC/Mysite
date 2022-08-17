@@ -1,20 +1,20 @@
 <template>
   <div class="container">
     <h1 class="header-page">Мои работы</h1>
-    <div class="card-box">
-        <router-link :to="{name: 'WorkDoct24'}" class="cart-work">
+    <div class="card-box" id="view">
+        <router-link :to="{name: 'WorkDoct24'}" class="cart-work" @click="scrolTo">
           <img src="../assets/img/Doc24.png" alt="worklogo" class="work-img">
           <div> <h3>Doct24</h3> <p>Стартап</p> </div>
         </router-link>
-        <router-link :to="{name: 'WorkVideotek'}" class="cart-work">
+        <router-link :to="{name: 'WorkVideotek'}" class="cart-work" @click="scrolTo">
           <img src="../assets/img/videotek.jpg" alt="worklogo" class="work-img">
           <div> <h3>Videotek</h3> <p>Командная разработка</p> </div>
         </router-link>
-        <router-link :to="{name: 'WorkShop'}" class="cart-work">
+        <router-link :to="{name: 'WorkShop'}" class="cart-work" @click="scrolTo">
           <img src="../assets/img/verstca.jpg" alt="worklogo" class="work-img">
           <div> <h3>Онлайн магазин</h3> <p>Учебный проект</p> </div>
         </router-link>
-        <router-link :to="{name: 'WorkFirst'}" class="cart-work">
+        <router-link :to="{name: 'WorkFirst'}" class="cart-work" @click="scrolTo">
           <img src="../assets/img/first.jpg" alt="worklogo" class="work-img">
           <div> <h3>Первый сайт</h3> <p>Учебный проект</p> </div>
         </router-link>
@@ -25,7 +25,14 @@
 
 <script>
 export default {
-
+  name:"MyWorcks",
+  methods: {
+    scrolTo(){
+      let scroll = document.getElementById('view').clientHeight + 70
+      window.scrollTo({top:scroll, behavior: 'smooth'})
+    }
+    
+  }
 }
 </script>
 
@@ -62,5 +69,10 @@ export default {
   height: 60%;
     width: 100%;
     object-fit: cover;        
+}
+@media screen and (max-width: 800px) {
+  .card-box{
+    justify-content: center;
+  }
 }
 </style>

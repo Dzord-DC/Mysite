@@ -1,4 +1,7 @@
 <template>
+<div class="warning">
+  <h1>Игра не поддерживает ваш экран!</h1>
+</div>
 <div v-if="showMenu" class="game-menu">
   <h1 class="game-name">Star Catflict</h1>
   <h1 v-if="!game" class="game-name">ПОТРАЧЕНО</h1>
@@ -63,6 +66,9 @@ export default {
 </script>
 
 <style>
+.warning{
+  display: none;
+}
 .game-menu{
   width: 100%;
   display: flex;
@@ -94,5 +100,19 @@ export default {
 }
 .game-point{
   font-size: 30px;
+}
+@media screen and (max-width: 800px) {
+  .game-menu{
+    display: none;
+  }
+  .game-box{
+    display: none;
+  }
+  .warning{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background-color: black;
+  }
 }
 </style>

@@ -61,7 +61,11 @@ export default {
 .contact-a:hover{
   text-shadow: 0px 2px 10px rgb(80, 79, 79);
 }
+.contact-img{
+width: 50px;
+}
 .contact-a:hover .contact-img{
+  
       box-shadow: 0px 15px 8px rgb(80 79 79);
     opacity: 0.7;
 }

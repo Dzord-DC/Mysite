@@ -144,4 +144,16 @@ export default {
 .work-time{
   width: 250px;
 }
+@media screen and (max-width: 800px) {
+  .title-box{
+    display: block;
+  }
+  .description{
+    width: 90%;
+    margin: auto;
+  }
+  .work-time {
+    width: 20%;
+}
+}
 </style>
