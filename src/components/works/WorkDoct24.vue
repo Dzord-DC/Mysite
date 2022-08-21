@@ -32,4 +32,16 @@ export default {
   font-size: 20px;
   line-height: 150%;
 }
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 36px;
+  width: 300px;
+  height: 60px;
+  font-size: 25px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid;
+}
 </style>
