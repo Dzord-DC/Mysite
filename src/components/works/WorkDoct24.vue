@@ -9,6 +9,7 @@
      Я занимаю должность Teamlead в отделе разработки на фрейворке Vue. 
      Beckend разработан на Django.
     </p>
+    <a href="https://vue.doct24.com" class="btn"> Перейти на сайт</a>
   </div>
 </template>
 
