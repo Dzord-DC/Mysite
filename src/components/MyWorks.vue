@@ -19,7 +19,10 @@
           <div> <h3>Первый сайт</h3> <p>Учебный проект</p> </div>
         </router-link>
     </div>
-    <router-view  />
+    <div class="work-box">
+      <router-view  />
+      </div>
+    
   </div>
 </template>
 
@@ -27,9 +30,13 @@
 export default {
   name:"MyWorcks",
   methods: {
-    scrolTo(){
+    scrolTo(){ 
+      setTimeout(() => { 
       let scroll = document.getElementById('view').clientHeight + 70
       window.scrollTo({top:scroll, behavior: 'smooth'})
+
+    }, 100)
+      
     }
     
   }
@@ -64,6 +71,9 @@ export default {
 }
 .cart-work:hover{
   box-shadow: 0px 0px 15px #000;
+}
+.work-box{
+  
 }
 .work-img{
   height: 60%;

@@ -13,7 +13,8 @@ const routes = [
     {
         path: '/',
         name: "Home",
-        component: MainSite
+        component: MainSite,
+        alias: '/*'
     },
     {
         path: '/works',
@@ -53,6 +54,11 @@ const routes = [
         name: "Contacts",
         component: MyContacts
     },
+    {
+        path: "/*",
+        name: "404",
+        alias: '/'
+    }
 ]
 
 const router = createRouter({
